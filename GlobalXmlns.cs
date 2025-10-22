@@ -1,0 +1,2 @@
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "RJVTD2_MP_2025261")]
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "RJVTD2_MP_2025261.Pages")]

@@ -66,4 +66,9 @@
         <PackageReference Include="Xam.Plugin.Media" Version="6.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Models\" />
+      <Folder Include="ViewModels\" />
+    </ItemGroup>
+
 </Project>

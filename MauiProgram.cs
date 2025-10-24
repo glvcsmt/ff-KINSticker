@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using RJVTD2_MP_2025261.ViewModels;
 
 namespace RJVTD2_MP_2025261;
 
@@ -14,6 +15,7 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
+        builder.Services.AddSingleton<HomePageViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

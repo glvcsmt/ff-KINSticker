@@ -2,8 +2,8 @@
 
 public class StickerSpot
 {
-    DateTime Date { get; set; }
-    string PhotoPath { get; set; }
-    string Location { get; set; }
-    string SpotName { get; set; }
+    public DateTime Date { get; set; }
+    public string PhotoPath { get; set; }
+    public string Location { get; set; }
+    public string SpotName { get; set; }
 }

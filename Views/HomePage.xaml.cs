@@ -9,11 +9,11 @@ namespace RJVTD2_MP_2025261.Views;
 
 public partial class HomePage : ContentPage
 {
-    private HomePageViewModel _viewModel;
+    private HomePageViewModel viewModel;
     public HomePage(HomePageViewModel viewModel)
     {
         InitializeComponent();
-        _viewModel = viewModel;
-        BindingContext = _viewModel;
+        this.viewModel = viewModel;
+        BindingContext = viewModel;
     }
 }

@@ -4,11 +4,70 @@
         <name>RJVTD2_MP_2025261</name>
     </assembly>
     <members>
+        <member name="T:RJVTD2_MP_2025261.ViewModels.HomePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.CapturedPhotoPath">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.capturedPhotoPath"/>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.capturePhotoCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.CapturePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.CapturePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.CapturePhotoAsync"/>.</summary>
+        </member>
+        <member name="T:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.Teams">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.teams"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SelectedTeam">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.selectedTeam"/>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.savePhotoCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhoto(System.String)"/>.</summary>
+        </member>
         <member name="T:RJVTD2_MP_2025261.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CapturedPhotoPath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Teams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Teams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedTeam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CapturedPhotoPath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Teams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Teams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedTeam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
         </member>
     </members>
 </doc>

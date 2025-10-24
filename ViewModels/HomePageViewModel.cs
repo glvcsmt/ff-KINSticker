@@ -1,15 +1,15 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.Messaging;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using RJVTD2_MP_2025261.Views;
 
 namespace RJVTD2_MP_2025261.ViewModels;
 
 public partial class HomePageViewModel : ObservableObject
 {
     [ObservableProperty]
-    string capturedPhotoPath;
+    private string capturedPhotoPath;
 
     [RelayCommand]
     public async Task CapturePhotoAsync()
@@ -25,6 +25,7 @@ public partial class HomePageViewModel : ObservableObject
             if (photo != null)
             {
                 capturedPhotoPath = photo.Path;
+                await Shell.Current.Navigation.PushModalAsync(new PhotoPreviewPopup(capturedPhotoPath));
             }
         }
     }

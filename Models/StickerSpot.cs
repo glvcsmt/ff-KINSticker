@@ -6,4 +6,5 @@ public class StickerSpot
     public string PhotoPath { get; set; }
     public string Location { get; set; }
     public string SpotName { get; set; }
+    public string Team { get; set; }
 }

@@ -2,6 +2,8 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RJVTD2_MP_2025261.ViewModels"
+             x:DataType="local:HomePageViewModel"
              x:Class="RJVTD2_MP_2025261.Views.HomePage">
     <ContentPage.Content>
         <VerticalStackLayout>
@@ -17,7 +19,7 @@
                                    HorizontalOptions="Center">
                 <Button Text="S"/>
                 <Button Text="M"/>
-                <Button Text="P"/>
+                <Button Text="P" Command="{Binding CapturePhotoCommand}"/>
                 <Button Text="G"/>
                 <Button Text="U"/>
             </HorizontalStackLayout>

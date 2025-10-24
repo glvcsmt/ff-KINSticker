@@ -7,8 +7,17 @@
     Title="RJVTD2_MP_2025261">
 
     <ShellContent
-        Title="Home"
+        Title="KIN Sticker"
         ContentTemplate="{DataTemplate views:HomePage}"
         Route="MainPage" />
+    <Shell.TitleView>
+        <Grid HorizontalOptions="FillAndExpand">
+            <Label Text="KIN Sticker"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="50"
+                   FontAttributes="Bold"/>
+        </Grid>
+    </Shell.TitleView>
 
 </Shell>

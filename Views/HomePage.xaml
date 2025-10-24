@@ -4,6 +4,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RJVTD2_MP_2025261.Views.HomePage">
     <ContentPage.Content>
-        
+        <VerticalStackLayout>
+            <BoxView WidthRequest="350"
+                     HeightRequest="600"
+                     Color="Grey"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     CornerRadius="25"
+                     BackgroundColor="Transparent"
+                     Margin="0, 45, 0, 0 "/>
+            <HorizontalStackLayout Margin="25, 50, 25, 25" Spacing="25" 
+                                   HorizontalOptions="Center">
+                <Button Text="" />
+                <Button Text=""/>
+                <Button Text=""/>
+                <Button Text=""/>
+                <Button Text=""/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

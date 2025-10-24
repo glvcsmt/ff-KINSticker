@@ -15,11 +15,11 @@
                      Margin="0, 45, 0, 0 "/>
             <HorizontalStackLayout Margin="25, 50, 25, 25" Spacing="25" 
                                    HorizontalOptions="Center">
-                <Button Text="" />
-                <Button Text=""/>
-                <Button Text=""/>
-                <Button Text=""/>
-                <Button Text=""/>
+                <Button Text="S"/>
+                <Button Text="M"/>
+                <Button Text="P"/>
+                <Button Text="G"/>
+                <Button Text="U"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ContentPage.Content>

@@ -3,8 +3,6 @@
 	<application
 			android:allowBackup="true"
 			android:supportsRtl="true">
-
-		<!-- FileProvider a kamera számára -->
 		<provider
 				android:name="androidx.core.content.FileProvider"
 				android:authorities="${applicationId}.fileprovider"

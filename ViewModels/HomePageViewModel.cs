@@ -15,8 +15,6 @@ public partial class HomePageViewModel : ObservableObject
     {
         try
         {
-
-
             await CrossMedia.Current.Initialize();
 
             var cameraStatus = await Permissions.RequestAsync<Permissions.Camera>();

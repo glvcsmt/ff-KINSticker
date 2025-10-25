@@ -6,13 +6,12 @@ namespace RJVTD2_MP_2025261.ViewModels;
 
 public partial class PhotoPreviewPopupViewModel : ObservableObject
 {
-    string capturedPhotoPath;
-
-    public PhotoPreviewPopupViewModel(string capturedPhotoPath)
-    {
-        this.capturedPhotoPath = capturedPhotoPath;
-    }
-
+    [ObservableProperty]
+    private string capturedPhotoPath;
+    
+    [ObservableProperty]
+    private string selectedTeam;
+    
     [ObservableProperty]
     List<string> teams = new List<string>()
     {
@@ -21,9 +20,11 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
         "Fehérvár", "Gépész", "HIPI", "Műszer",
         "Rejtő", "Ybl"
     };
-    
-    [ObservableProperty]
-    private string selectedTeam;
+
+    public PhotoPreviewPopupViewModel(string capturedPhotoPath)
+    {
+        CapturedPhotoPath = capturedPhotoPath;
+    }
 
     [RelayCommand]
     public async Task SavePhoto(string name)
@@ -32,7 +33,5 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
         newSticker.PhotoPath = capturedPhotoPath;
         newSticker.SpotName = name;
         newSticker.Team = selectedTeam;
-        
-        
     }
 }

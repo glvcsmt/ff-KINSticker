@@ -21,11 +21,14 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.Teams">
-            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.teams"/>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.CapturedPhotoPath">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.capturedPhotoPath"/>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SelectedTeam">
             <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.selectedTeam"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.Teams">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.teams"/>
         </member>
         <member name="F:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.savePhotoCommand">
             <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand"/>.</summary>
@@ -48,11 +51,11 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CapturedPhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Teams">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Teams" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Teams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Teams" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -63,11 +66,11 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CapturedPhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Teams">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Teams" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Teams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Teams" generated properties.</summary>
         </member>
     </members>
 </doc>

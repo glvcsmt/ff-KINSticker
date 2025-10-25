@@ -9,7 +9,12 @@
         <VerticalStackLayout>
             <Image Source="{Binding CapturedPhotoPath}"
                    HeightRequest="500"
-                   WidthRequest="380" />
+                   WidthRequest="380" 
+                   Margin="0,50,0,0"/>
+            <Picker ItemsSource="{Binding Teams}"
+                    SelectedItem="{Binding SelectedTeam}"
+                    Title="Válassz egy csapatot!"
+                    FontSize="30"/>
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

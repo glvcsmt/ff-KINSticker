@@ -10,6 +10,7 @@ namespace RJVTD2_MP_2025261.Views;
 public partial class HomePage : ContentPage
 {
     private HomePageViewModel viewModel;
+    
     public HomePage(HomePageViewModel viewModel)
     {
         InitializeComponent();

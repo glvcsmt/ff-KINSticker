@@ -8,17 +8,23 @@ namespace RJVTD2_MP_2025261.ViewModels;
 
 public partial class HomePageViewModel : ObservableObject
 {
-    [ObservableProperty]
-    private string capturedPhotoPath;
+    [ObservableProperty] private string capturedPhotoPath;
 
     [RelayCommand]
     public async Task CapturePhotoAsync()
     {
-        if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
+        try
         {
+
+
+            await CrossMedia.Current.Initialize();
+
+            var cameraStatus = await Permissions.RequestAsync<Permissions.Camera>();
+            if (cameraStatus != PermissionStatus.Granted) return;
+
             var photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
             {
-                SaveToAlbum = true,
+                SaveToAlbum = false,
                 PhotoSize = PhotoSize.Medium
             });
 
@@ -27,6 +33,13 @@ public partial class HomePageViewModel : ObservableObject
                 capturedPhotoPath = photo.Path;
                 await Shell.Current.Navigation.PushModalAsync(new PhotoPreviewPopup(capturedPhotoPath));
             }
+        }
+        catch (Exception ex)
+        {
+            await MainThread.InvokeOnMainThreadAsync(async () =>
+            {
+                await Application.Current?.MainPage?.DisplayAlert("Hiba", ex.Message, "OK");
+            });
         }
     }
 }

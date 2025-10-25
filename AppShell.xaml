@@ -19,9 +19,4 @@
                    FontAttributes="Bold"/>
         </Grid>
     </Shell.TitleView>
-    
-    <ShellContent
-        Title="Preview"
-        ContentTemplate=""/>
-
 </Shell>

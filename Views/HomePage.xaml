@@ -6,23 +6,14 @@
              x:DataType="local:HomePageViewModel"
              x:Class="RJVTD2_MP_2025261.Views.HomePage">
     <ContentPage.Content>
-        <VerticalStackLayout>
-            <BoxView WidthRequest="350"
-                     HeightRequest="600"
-                     Color="Grey"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     CornerRadius="25"
-                     BackgroundColor="Transparent"
-                     Margin="0, 45, 0, 0 "/>
-            <HorizontalStackLayout Margin="25, 50, 25, 25" Spacing="25" 
-                                   HorizontalOptions="Center">
-                <Button Text="S"/>
-                <Button Text="M"/>
-                <Button Text="P" Command="{Binding CapturePhotoCommand}"/>
-                <Button Text="G"/>
-                <Button Text="U"/>
-            </HorizontalStackLayout>
+        <VerticalStackLayout Spacing="30"
+                             WidthRequest="250"
+                             Margin="0, 200, 0, 0">
+            <Button Text="Kép készítése" Command="{Binding CapturePhotoCommand}" />
+            <Button Text="Saját profil" />
+            <Button Text="Galéria" />
+            <Button Text="Térkép" />
+            <Button Text="Statisztika"/>
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

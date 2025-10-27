@@ -12,7 +12,7 @@
         Route="MainPage" />
     <Shell.TitleView>
         <Grid HorizontalOptions="FillAndExpand">
-            <Label Text="KIN Sticker"
+            <Label Text=""
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontSize="50"

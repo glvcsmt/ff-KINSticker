@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RJVTD2_MP_2025261")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e82d23c30718345d4dc33445aafba06f440a5832")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b3fee312e7337604dda60acadd6cfb62321f40d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RJVTD2_MP_2025261")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RJVTD2_MP_2025261")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

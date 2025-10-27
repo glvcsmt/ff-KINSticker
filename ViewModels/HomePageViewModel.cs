@@ -3,12 +3,20 @@ using CommunityToolkit.Mvvm.Input;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using RJVTD2_MP_2025261.Views;
+using RJVTD2_MP_2025261.Data;
 
 namespace RJVTD2_MP_2025261.ViewModels;
 
 public partial class HomePageViewModel : ObservableObject
 {
+    private IStickerDatabase _stickerDatabase;
+    
     [ObservableProperty] private string capturedPhotoPath;
+    
+    public HomePageViewModel(IStickerDatabase stickerDatabase)
+    {
+        _stickerDatabase = stickerDatabase;
+    }
 
     [RelayCommand]
     public async Task CapturePhotoAsync()

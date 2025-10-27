@@ -1,4 +1,7 @@
-﻿namespace RJVTD2_MP_2025261.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using SQLite;
+
+namespace RJVTD2_MP_2025261.Models;
 
 public class StickerSpot
 {

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using RJVTD2_MP_2025261.ViewModels;
 using RJVTD2_MP_2025261.Views;
+using RJVTD2_MP_2025261.Data;
 
 namespace RJVTD2_MP_2025261;
 
@@ -18,6 +19,7 @@ public static class MauiProgram
             });
         builder.Services.AddSingleton<HomePage>();
         builder.Services.AddSingleton<HomePageViewModel>();
+        builder.Services.AddSingleton<IStickerDatabase, SQLiteStickerDatabase>();
 
 #if DEBUG
         builder.Logging.AddDebug();

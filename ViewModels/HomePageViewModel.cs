@@ -37,7 +37,7 @@ public partial class HomePageViewModel : ObservableObject
             if (photo != null)
             {
                 capturedPhotoPath = photo.Path;
-                await Shell.Current.Navigation.PushModalAsync(new PhotoPreviewPopup(capturedPhotoPath));
+                await Shell.Current.Navigation.PushModalAsync(new PhotoPreviewPopup(capturedPhotoPath, _stickerDatabase));
             }
         }
         catch (Exception ex)

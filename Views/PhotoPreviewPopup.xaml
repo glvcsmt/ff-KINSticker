@@ -26,7 +26,8 @@
             <Entry Placeholder="Add meg az elfoglalt hely nevét!"
                    FontSize="20"
                    WidthRequest="300"
-                   HorizontalTextAlignment="Center"/>
+                   HorizontalTextAlignment="Center"
+                   Text="{Binding SpotName}"/>
             
             <Picker ItemsSource="{Binding Teams}"
                     SelectedItem="{Binding SelectedTeam}"

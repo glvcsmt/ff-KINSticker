@@ -3,12 +3,25 @@ using SQLite;
 
 namespace RJVTD2_MP_2025261.Models;
 
-public class StickerSpot
+public partial class StickerSpot : ObservableObject
 {
-    public int Id { get; set; }
-    public DateTime Date { get; set; }
-    public string PhotoPath { get; set; }
-    public string Location { get; set; }
-    public string SpotName { get; set; }
-    public string Team { get; set; }
+    [property: AutoIncrement] 
+    [property: PrimaryKey]
+    [ObservableProperty]
+    private int id;
+    
+    [ObservableProperty]
+    private DateTime date;
+    
+    [ObservableProperty]
+    public string photoPath;
+    
+    [ObservableProperty]
+    public string location;
+    
+    [ObservableProperty]
+    public string spotName;
+    
+    [ObservableProperty]
+    public string team;
 }

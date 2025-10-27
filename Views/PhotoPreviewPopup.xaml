@@ -37,6 +37,7 @@
                     Margin="0, 20, 0, 50"/>
             
             <Button Text="Mentés"
+                    Command="{Binding SavePhotoCommand}"
                     WidthRequest="150"/>
         </VerticalStackLayout>
     </ContentPage.Content>

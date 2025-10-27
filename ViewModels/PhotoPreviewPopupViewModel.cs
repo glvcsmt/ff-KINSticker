@@ -33,5 +33,7 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
         newSticker.PhotoPath = capturedPhotoPath;
         newSticker.SpotName = name;
         newSticker.Team = selectedTeam;
+        
+        await Shell.Current.Navigation.PopModalAsync();
     }
 }

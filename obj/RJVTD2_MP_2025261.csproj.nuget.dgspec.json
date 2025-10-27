@@ -88,6 +88,10 @@
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -135,6 +139,10 @@
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -182,6 +190,10 @@
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -224,6 +236,10 @@
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [

@@ -7,14 +7,37 @@
              x:Class="RJVTD2_MP_2025261.Views.PhotoPreviewPopup">
     <ContentPage.Content>
         <VerticalStackLayout>
-            <Image Source="{Binding CapturedPhotoPath}"
-                   HeightRequest="500"
-                   WidthRequest="380" 
-                   Margin="0,50,0,0"/>
+            <Label Text="Add meg a részleteket!" 
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
+                   Margin="0, 15, 0, 0"/>
+            
+            <Border StrokeShape="RoundRectangle 15"
+                    StrokeThickness="8"
+                    Stroke="black"
+                    WidthRequest="378"
+                    HeightRequest="500"
+                    Margin="0,20,0,5">
+                <Image Source="{Binding CapturedPhotoPath}"
+                       HeightRequest="500"
+                       WidthRequest="380"/>
+            </Border>
+            
+            <Entry Placeholder="Add meg az elfoglalt hely nevét!"
+                   FontSize="20"
+                   WidthRequest="300"
+                   HorizontalTextAlignment="Center"/>
+            
             <Picker ItemsSource="{Binding Teams}"
                     SelectedItem="{Binding SelectedTeam}"
-                    Title="Válassz egy csapatot!"
-                    FontSize="30"/>
+                    Title="Válaszd ki a csapatot!"
+                    FontSize="20"
+                    WidthRequest="300"
+                    HorizontalTextAlignment="Center"
+                    Margin="0, 20, 0, 50"/>
+            
+            <Button Text="Mentés"
+                    WidthRequest="150"/>
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

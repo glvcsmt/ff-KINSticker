@@ -8,7 +8,7 @@ public class SQLiteStickerDatabase : IStickerDatabase
     SQLite.SQLiteOpenFlags Flags = SQLite.SQLiteOpenFlags.ReadWrite | SQLite.SQLiteOpenFlags.Create;
     
     string databasePath = Path.Combine(FileSystem.Current.AppDataDirectory, "StickerDatabase.db3");
-
+    
     private SQLiteAsyncConnection database;
 
     public SQLiteStickerDatabase()

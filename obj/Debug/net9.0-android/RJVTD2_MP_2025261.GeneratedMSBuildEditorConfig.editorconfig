@@ -47,6 +47,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = RJVTD2_MP_2025261.Resource
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Semester 5/RJVTD2_MP_2025261/Views/GalleryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RJVTD2_MP_2025261.Views.GalleryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GalleryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GalleryPage.xaml
+
 [C:/Semester 5/RJVTD2_MP_2025261/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = RJVTD2_MP_2025261.Views.HomePage.xaml

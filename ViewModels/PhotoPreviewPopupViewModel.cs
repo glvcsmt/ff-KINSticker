@@ -42,7 +42,7 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
         newSticker.Team = selectedTeam;
         newSticker.Date = DateTime.Now.Date.AddHours(DateTime.Now.Hour).AddMinutes(DateTime.Now.Minute);
         
-        //_stickerDatabase.CreateStickerSpotAsync(newSticker);
+        _stickerDatabase.CreateStickerSpotAsync(newSticker);
         
         await Shell.Current.Navigation.PopModalAsync();
     }

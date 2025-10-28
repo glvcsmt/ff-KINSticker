@@ -11,7 +11,7 @@
                              Margin="0, 200, 0, 0">
             <Button Text="Kép készítése" Command="{Binding CapturePhotoCommand}" />
             <Button Text="Saját profil" />
-            <Button Text="Galéria" />
+            <Button Text="Galéria" Command="{Binding OpenGalleryCommand}"/>
             <Button Text="Térkép" />
             <Button Text="Statisztika"/>
         </VerticalStackLayout>

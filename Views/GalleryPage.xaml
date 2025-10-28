@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RJVTD2_MP_2025261.ViewModels"
+             xmlns:models="clr-namespace:RJVTD2_MP_2025261.Models"
+             x:DataType="local:GalleryPageViewModel"
+             x:Class="RJVTD2_MP_2025261.Views.GalleryPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <Grid ColumnDefinitions="100, *"
+                  Margin="5"
+                  Grid.Row="0">
+                <Button Grid.Column="0" Grid.Row="0" 
+                        Text="vissza"
+                        Command="{Binding GoBackCommand}"/>
+                <Picker Grid.Column="1" Grid.Row="0"/>
+            </Grid>
+            <CollectionView ItemsSource="{Binding Stickers}"
+                            ItemsLayout="VerticalGrid, 2"
+                            Grid.Row="1"
+                            Margin="5">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:StickerSpot">
+                        <VerticalStackLayout Margin="3, 5, 3, 0">
+                            <Border StrokeShape="RoundRectangle 15"
+                                    StrokeThickness="5"
+                                    Stroke="black"
+                                    Margin="0, 0, 0, 2">
+                                <Image Source="{Binding PhotoPath}"/>
+                            </Border>
+                            <Label Text="{Binding Date, StringFormat='{0:yyyy/MM/dd - HH:mm}'}"/>
+                            <Label Text="{Binding SpotName}"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

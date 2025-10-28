@@ -48,4 +48,10 @@ public partial class HomePageViewModel : ObservableObject
             });
         }
     }
+
+    [RelayCommand]
+    public async Task OpenGalleryAsync()
+    {
+        await Shell.Current.Navigation.PushModalAsync(new GalleryPage(_stickerDatabase));
+    }
 }

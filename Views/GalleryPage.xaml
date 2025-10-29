@@ -12,11 +12,14 @@
                   Margin="5"
                   Grid.Row="0">
                 <Button Grid.Column="0" Grid.Row="0" 
-                        Text="vissza"
+                        Text="Vissza"
                         Command="{Binding GoBackCommand}"/>
-                <Picker Grid.Column="1" Grid.Row="0"/>
+                <Picker Grid.Column="1" Grid.Row="0"
+                        ItemsSource="{Binding Teams}"
+                        SelectedItem="{Binding SelectedTeam}"
+                        Title="Csapat szűrő"/>
             </Grid>
-            <CollectionView ItemsSource="{Binding Stickers}"
+            <CollectionView ItemsSource="{Binding FilteredStickers}"
                             ItemsLayout="VerticalGrid, 2"
                             Grid.Row="1"
                             Margin="5">

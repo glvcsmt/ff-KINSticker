@@ -21,6 +21,6 @@ public partial class GalleryPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        await viewModel.LoadStickers();
+        await viewModel.LoadStickersAsync();
     }
 }

@@ -29,21 +29,42 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.SelectedTeam">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.selectedTeam"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.Teams">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.teams"/>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.Stickers">
             <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.stickers"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.FilteredStickers">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.filteredStickers"/>
+        </member>
+        <member name="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.OnSelectedTeamChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.SelectedTeam"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.SelectedTeam"/> is changed.</remarks>
         </member>
         <member name="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.loadStickersCommand">
             <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.LoadStickersCommand"/>.</summary>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.LoadStickersCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.LoadStickers"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.LoadStickersAsync"/>.</summary>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.filterTeamCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.FilterTeamCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.FilterTeamCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.FilterTeamAsync"/>.</summary>
         </member>
         <member name="F:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.goBackCommand">
             <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.GoBackCommand"/>.</summary>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.GoBackCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.GoBack"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel.GoBackAsync"/>.</summary>
         </member>
         <member name="T:RJVTD2_MP_2025261.ViewModels.HomePageViewModel">
             <inheritdoc/>
@@ -85,7 +106,7 @@
             <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand"/>.</summary>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhoto(System.String)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoAsync(System.String)"/>.</summary>
         </member>
         <member name="T:RJVTD2_MP_2025261.Resource">
             <summary>
@@ -117,17 +138,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Team">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Stickers">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Stickers" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CapturedPhotoPath">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Teams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Teams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Stickers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Stickers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredStickers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredStickers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CapturedPhotoPath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -153,17 +177,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Team">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Stickers">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Stickers" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CapturedPhotoPath">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Teams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Teams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Stickers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Stickers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredStickers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredStickers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CapturedPhotoPath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
         </member>
     </members>
 </doc>

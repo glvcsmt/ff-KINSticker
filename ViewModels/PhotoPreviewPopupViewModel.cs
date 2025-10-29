@@ -34,7 +34,7 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
     }
 
     [RelayCommand]
-    public async Task SavePhoto(string name)
+    public async Task SavePhotoAsync(string name)
     {
         StickerSpot newSticker = new StickerSpot();
         newSticker.PhotoPath = capturedPhotoPath;

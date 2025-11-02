@@ -36,14 +36,21 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
     [RelayCommand]
     public async Task SavePhotoAsync(string name)
     {
-        StickerSpot newSticker = new StickerSpot();
-        newSticker.PhotoPath = capturedPhotoPath;
-        newSticker.SpotName = SpotName;
-        newSticker.Team = selectedTeam;
-        newSticker.Date = DateTime.Now.Date.AddHours(DateTime.Now.Hour).AddMinutes(DateTime.Now.Minute);
-        
-        _stickerDatabase.CreateStickerSpotAsync(newSticker);
-        
-        await Shell.Current.Navigation.PopModalAsync();
+        if (String.IsNullOrEmpty(SelectedTeam) || String.IsNullOrEmpty(SpotName))
+        {
+            await Shell.Current.DisplayAlert("Hiba", "Kérlek adj meg minden információt a képpel kapcsolatban!", "OK");
+        }
+        else
+        {
+            StickerSpot newSticker = new StickerSpot();
+            newSticker.PhotoPath = capturedPhotoPath;
+            newSticker.SpotName = SpotName;
+            newSticker.Team = selectedTeam;
+            newSticker.Date = DateTime.Now.Date.AddHours(DateTime.Now.Hour).AddMinutes(DateTime.Now.Minute);
+
+            _stickerDatabase.CreateStickerSpotAsync(newSticker);
+
+            await Shell.Current.Navigation.PopModalAsync();
+        }
     }
 }

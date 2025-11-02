@@ -15,8 +15,10 @@ public class SQLiteStickerDatabase : IStickerDatabase
     {
         database = new SQLiteAsyncConnection(databasePath, Flags);
         database.CreateTableAsync<StickerSpot>().Wait();
-    }
-
+        database.CreateTableAsync<Profile>().Wait();
+    } 
+    
+    //StickerSpot
     public async Task<List<StickerSpot>> GetStickerSpotsAsync()
     {
         return await database.Table<StickerSpot>().ToListAsync();
@@ -40,5 +42,31 @@ public class SQLiteStickerDatabase : IStickerDatabase
     public async Task DeleteStickerSpotAsync(StickerSpot stickerSpot)
     {
         await database.DeleteAsync(stickerSpot);
+    }
+    
+    //Profile
+    public async Task<List<Profile>> GetProfilesAsync()
+    {
+        return await database.Table<Profile>().ToListAsync(); 
+    }
+
+    public async Task<Profile> GetProfileAsync(int id)
+    {
+        return await database.Table<Profile>().Where(i => i.Id == id).FirstOrDefaultAsync(); 
+    }
+
+    public async Task CreateProfileAsync(Profile profile)
+    {
+        await database.InsertAsync(profile);
+    }
+
+    public async Task UpdateProfileAsync(Profile profile)
+    {
+        await database.UpdateAsync(profile);
+    }
+
+    public async Task DeleteProfileAsync(Profile profile)
+    {
+        await database.DeleteAsync(profile);
     }
 }

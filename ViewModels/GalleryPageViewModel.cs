@@ -53,7 +53,10 @@ public partial class GalleryPageViewModel : ObservableObject
         FilteredStickers.Clear();
         if (SelectedTeam == "Mindent mutat")
         {
-            FilteredStickers = Stickers;
+            foreach (StickerSpot sticker in Stickers)
+            {
+                FilteredStickers.Add((sticker));
+            }
         }
         else
         {

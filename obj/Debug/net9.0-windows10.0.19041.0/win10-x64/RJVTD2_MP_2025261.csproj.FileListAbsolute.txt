@@ -271,6 +271,11 @@ C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\s
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-150.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-200.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-400.png
+C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-400.png
+C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-200.png
+C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-150.png
+C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-125.png
+C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLargeTile.scale-400.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLargeTile.scale-200.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLargeTile.scale-150.png
@@ -317,11 +322,6 @@ C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\a
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLogo.scale-125.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLogo.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appicon.ico
-C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-400.png
-C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-200.png
-C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-150.png
-C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-125.png
-C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\RJVTD2_MP_2025261.exe
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\RJVTD2_MP_2025261.deps.json
 C:\Semester 5\RJVTD2_MP_2025261\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\RJVTD2_MP_2025261.runtimeconfig.json
@@ -442,6 +442,11 @@ C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\m
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauifont.stamp
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
+C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
+C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
+C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
@@ -488,11 +493,6 @@ C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\r
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico
-C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
-C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauiimage.outputs
 C:\Semester 5\RJVTD2_MP_2025261\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\RJVTD2_MP_2025261.AssemblyInfoInputs.cache

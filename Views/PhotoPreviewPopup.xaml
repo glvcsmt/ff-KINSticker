@@ -24,7 +24,7 @@
             </Border>
             
             <Entry Placeholder="Add meg az elfoglalt hely nevét!"
-                   FontSize="20"
+                   FontSize="18"
                    WidthRequest="300"
                    HorizontalTextAlignment="Center"
                    Text="{Binding SpotName}"/>
@@ -32,7 +32,7 @@
             <Picker ItemsSource="{Binding Teams}"
                     SelectedItem="{Binding SelectedTeam}"
                     Title="Válaszd ki a csapatot!"
-                    FontSize="20"
+                    FontSize="18"
                     WidthRequest="300"
                     HorizontalTextAlignment="Center"
                     Margin="0, 20, 0, 50"/>

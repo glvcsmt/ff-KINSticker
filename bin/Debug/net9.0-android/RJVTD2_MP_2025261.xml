@@ -25,6 +25,12 @@
         <member name="P:RJVTD2_MP_2025261.Models.StickerSpot.Team">
             <inheritdoc cref="F:RJVTD2_MP_2025261.Models.StickerSpot.team"/>
         </member>
+        <member name="P:RJVTD2_MP_2025261.Models.StickerSpot.Latitude">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.StickerSpot.latitude"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.Models.StickerSpot.Longitude">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.StickerSpot.longitude"/>
+        </member>
         <member name="T:RJVTD2_MP_2025261.ViewModels.GalleryPageViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -138,6 +144,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Team">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Latitude">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Latitude" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Longitude">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Longitude" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>
         </member>
@@ -176,6 +188,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Team">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Team" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Latitude">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Latitude" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Longitude">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Longitude" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedTeam">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedTeam" generated properties.</summary>

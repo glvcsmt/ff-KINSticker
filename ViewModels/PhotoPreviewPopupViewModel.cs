@@ -8,18 +8,14 @@ namespace RJVTD2_MP_2025261.ViewModels;
 public partial class PhotoPreviewPopupViewModel : ObservableObject
 {
     private IStickerDatabase _stickerDatabase;
-    
-    [ObservableProperty]
-    private string capturedPhotoPath;
-    
-    [ObservableProperty]
-    private string selectedTeam;
 
-    [ObservableProperty] 
-    private string spotName;
-    
-    [ObservableProperty]
-    private List<string> teams = new()
+    [ObservableProperty] private string capturedPhotoPath;
+
+    [ObservableProperty] private string selectedTeam;
+
+    [ObservableProperty] private string spotName;
+
+    [ObservableProperty] private List<string> teams = new()
     {
         "KINFO",
         "Alkatrész", "Automatika", "Energetika",
@@ -39,18 +35,25 @@ public partial class PhotoPreviewPopupViewModel : ObservableObject
         if (String.IsNullOrEmpty(SelectedTeam) || String.IsNullOrEmpty(SpotName))
         {
             await Shell.Current.DisplayAlert("Hiba", "Kérlek adj meg minden információt a képpel kapcsolatban!", "OK");
+            return;
         }
-        else
+        
+        StickerSpot newSticker = new StickerSpot();
+        newSticker.PhotoPath = capturedPhotoPath;
+        newSticker.SpotName = SpotName;
+        newSticker.Team = selectedTeam;
+        newSticker.Date = DateTime.Now.Date.AddHours(DateTime.Now.Hour).AddMinutes(DateTime.Now.Minute);
+
+        var request = new GeolocationRequest(GeolocationAccuracy.High, TimeSpan.FromSeconds(10));
+        var location = await Geolocation.GetLocationAsync(request);
+        if (location is not null)
         {
-            StickerSpot newSticker = new StickerSpot();
-            newSticker.PhotoPath = capturedPhotoPath;
-            newSticker.SpotName = SpotName;
-            newSticker.Team = selectedTeam;
-            newSticker.Date = DateTime.Now.Date.AddHours(DateTime.Now.Hour).AddMinutes(DateTime.Now.Minute);
-
-            _stickerDatabase.CreateStickerSpotAsync(newSticker);
-
-            await Shell.Current.Navigation.PopModalAsync();
+            newSticker.Latitude = location.Latitude;
+            newSticker.Longitude = location.Longitude;
         }
+        
+        _stickerDatabase.CreateStickerSpotAsync(newSticker);
+
+        await Shell.Current.Navigation.PopModalAsync();
     }
 }

@@ -14,14 +14,20 @@ public partial class StickerSpot : ObservableObject
     private DateTime date;
     
     [ObservableProperty]
-    public string photoPath;
+    private string photoPath;
     
     [ObservableProperty]
-    public string location;
+    private string location;
     
     [ObservableProperty]
-    public string spotName;
+    private string spotName;
     
     [ObservableProperty]
-    public string team;
+    private string team;
+    
+    [ObservableProperty]
+    private double latitude;
+    
+    [ObservableProperty]
+    private double longitude;
 }

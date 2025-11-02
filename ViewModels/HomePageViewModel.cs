@@ -24,9 +24,10 @@ public partial class HomePageViewModel : ObservableObject
         try
         {
             await CrossMedia.Current.Initialize();
-
+            
+            var locationStatus = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
             var cameraStatus = await Permissions.RequestAsync<Permissions.Camera>();
-            if (cameraStatus != PermissionStatus.Granted) return;
+            if (cameraStatus != PermissionStatus.Granted && locationStatus != PermissionStatus.Granted) return;
 
             var photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
             {

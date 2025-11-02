@@ -64,3 +64,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = RJVTD2_MP_2025261.Views.PhotoPreviewPopup.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PhotoPreviewPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PhotoPreviewPopup.xaml
+
+[C:/Semester 5/RJVTD2_MP_2025261/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RJVTD2_MP_2025261.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml

@@ -4,6 +4,21 @@
         <name>RJVTD2_MP_2025261</name>
     </assembly>
     <members>
+        <member name="T:RJVTD2_MP_2025261.Models.Profile">
+            <inheritdoc/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.Models.Profile.Id">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.Profile.id"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.Models.Profile.Nickname">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.Profile.nickname"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.Models.Profile.Team">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.Profile.team"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.Models.Profile.PhotoPath">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.Models.Profile.photoPath"/>
+        </member>
         <member name="T:RJVTD2_MP_2025261.Models.StickerSpot">
             <inheritdoc/>
         </member>
@@ -76,6 +91,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.CapturedPhotoPath">
             <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.capturedPhotoPath"/>
@@ -91,6 +107,12 @@
         </member>
         <member name="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.OpenGalleryCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.OpenGalleryAsync"/>.</summary>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.openProfileCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.OpenProfileCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.OpenProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.HomePageViewModel.OpenProfileAsync"/>.</summary>
         </member>
         <member name="T:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel">
             <inheritdoc/>
@@ -114,6 +136,55 @@
         <member name="P:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.PhotoPreviewPopupViewModel.SavePhotoAsync(System.String)"/>.</summary>
         </member>
+        <member name="T:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.PhotoPath">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.photoPath"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.Nickname">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.nickname"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.IsReadOnly">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.isReadOnly"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.IsEnabled">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.isEnabled"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.SelectedTeam">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.selectedTeam"/>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.Teams">
+            <inheritdoc cref="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.teams"/>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.loadProfileCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.LoadProfileCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.LoadProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.LoadProfileAsync"/>.</summary>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.GoBackAsync"/>.</summary>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.editProfileCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.EditProfileCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.EditProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.EditProfileAsync"/>.</summary>
+        </member>
+        <member name="F:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.saveProfileCommand">
+            <summary>The backing field for <see cref="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.SaveProfileCommand"/>.</summary>
+        </member>
+        <member name="P:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.SaveProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RJVTD2_MP_2025261.ViewModels.ProfilePageViewModel.SaveProfile"/>.</summary>
+        </member>
         <member name="T:RJVTD2_MP_2025261.Resource">
             <summary>
             Android Resource Designer class.
@@ -129,20 +200,23 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Date">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Date" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nickname">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nickname" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Team">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PhotoPath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Date" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SpotName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SpotName" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Team">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Latitude">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Latitude" generated properties.</summary>
@@ -165,6 +239,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CapturedPhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEnabled" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -174,20 +254,23 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Date">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Date" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nickname">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nickname" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Team">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PhotoPath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Date" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SpotName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SpotName" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Team">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Team" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Latitude">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Latitude" generated properties.</summary>
@@ -209,6 +292,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CapturedPhotoPath">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CapturedPhotoPath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEnabled" generated properties.</summary>
         </member>
     </members>
 </doc>

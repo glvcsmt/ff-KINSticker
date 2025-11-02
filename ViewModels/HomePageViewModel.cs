@@ -10,9 +10,9 @@ namespace RJVTD2_MP_2025261.ViewModels;
 public partial class HomePageViewModel : ObservableObject
 {
     private IStickerDatabase _stickerDatabase;
-    
+
     [ObservableProperty] private string capturedPhotoPath;
-    
+
     public HomePageViewModel(IStickerDatabase stickerDatabase)
     {
         _stickerDatabase = stickerDatabase;
@@ -24,7 +24,7 @@ public partial class HomePageViewModel : ObservableObject
         try
         {
             await CrossMedia.Current.Initialize();
-            
+
             var locationStatus = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
             var cameraStatus = await Permissions.RequestAsync<Permissions.Camera>();
             if (cameraStatus != PermissionStatus.Granted && locationStatus != PermissionStatus.Granted) return;
@@ -38,7 +38,8 @@ public partial class HomePageViewModel : ObservableObject
             if (photo != null)
             {
                 capturedPhotoPath = photo.Path;
-                await Shell.Current.Navigation.PushModalAsync(new PhotoPreviewPopup(capturedPhotoPath, _stickerDatabase));
+                await Shell.Current.Navigation.PushModalAsync(
+                    new PhotoPreviewPopup(capturedPhotoPath, _stickerDatabase));
             }
         }
         catch (Exception ex)
@@ -55,4 +56,11 @@ public partial class HomePageViewModel : ObservableObject
     {
         await Shell.Current.Navigation.PushModalAsync(new GalleryPage(_stickerDatabase));
     }
+
+    [RelayCommand]
+    public async Task OpenProfileAsync()
+    {
+        await Shell.Current.Navigation.PushModalAsync(new ProfilePage(_stickerDatabase));
+    }
+
 }

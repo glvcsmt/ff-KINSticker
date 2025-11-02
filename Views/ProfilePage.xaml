@@ -2,21 +2,46 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RJVTD2_MP_2025261.ViewModels"
+             x:DataType="local:ProfilePageViewModel"
              x:Class="RJVTD2_MP_2025261.Views.ProfilePage">
     <ContentPage.Content>
-            <VerticalStackLayout Margin="5">
-                <Border StrokeShape="Circle"
-                        StrokeThickness="5"
-                        Stroke="black"
-                        WidthRequest="100"
-                        HeightRequest="100">
-                        <Image/>
-                </Border>
-                <Entry IsReadOnly="True"
-                       Placeholder="Add meg a beceneved!"
-                       FontSize="20"/>
-                <Picker IsEnabled="False"
-                        FontSize="20"/>
-            </VerticalStackLayout>
+        <VerticalStackLayout Margin="5">
+            <Grid ColumnDefinitions="100, *">
+                <Button Text="Vissza"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Command="{Binding GoBackCommand}"/>
+                <Label Text="Profil"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       FontSize="25"/>
+            </Grid>
+            <Border StrokeShape="Ellipse"
+                    StrokeThickness="5"
+                    Stroke="black"
+                    WidthRequest="100"
+                    HeightRequest="100">
+                <Image HorizontalOptions="Center"/>
+            </Border>
+            <Entry IsReadOnly="{Binding IsReadOnly}"
+                   Placeholder="Add meg a beceneved!"
+                   FontSize="20"
+                   Text="{Binding Nickname}" 
+                   HorizontalOptions="Center"/>
+            <Picker IsEnabled="{Binding IsEnabled}"
+                    FontSize="20"
+                    ItemsSource="{Binding Teams}"
+                    SelectedItem="{Binding SelectedTeam}" 
+                    HorizontalOptions="Center"/>
+            <HorizontalStackLayout>
+                <Button Text="Mentés"
+                        IsEnabled="{Binding IsEnabled}"
+                        Command="{Binding SaveProfileCommand}"/>
+                <Button Text="Módosítás"
+                        IsEnabled="{Binding IsReadOnly}"
+                        Command="{Binding EditProfileCommand}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

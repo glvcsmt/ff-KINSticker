@@ -15,4 +15,7 @@ public partial class Profile : ObservableObject
 
     [ObservableProperty] 
     private string team;
+    
+    [ObservableProperty]
+    private string photoPath;
 }
